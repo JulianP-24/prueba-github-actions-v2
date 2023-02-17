@@ -26,6 +26,13 @@ public class AppTest {
     }
 
     @Test
+    public void deberiaCalcularLaSumaBienCaso2() {
+        double resEsperado = 20;
+        double respuesta = calculadoraTest.suma(10, 10);
+        assertEquals(resEsperado, respuesta, 0);
+    }
+
+    @Test
     public void deberiaCalcularLaRestaBien() {
         double resEsperado = -5;
         double respuesta = calculadoraTest.resta(10, 15);
